@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">Marketplace</string>
+    <string name="title_activity_login">Login</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="criar_conta">Criar conta</string>
+    <string name="esqueceu_senha">Esqueceu a senha?</string>
+    <string name="nome_completo">Nome completo</string>
+    <string name="titulo_cadastro">Cadastre-se</string>
+    <string name="deslogar">Deslogar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="meu_carrinho">Meu carrinho</string>
+    <string name="valor_total">Valor total</string>
+    <string name="valor_frete">Valor do frete</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="finalizar_pedido">Finalizar pedido</string>
+
+
+</resources>

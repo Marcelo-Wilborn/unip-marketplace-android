@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".LoginForm">
+
+        <View
+            android:id="@+id/container_components"
+            style="@style/ContainerComponents"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/edit_text"
+            android:drawableEnd="@drawable/ic_email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@id/container_components"
+            app:layout_constraintStart_toStartOf="@id/container_components"
+            app:layout_constraintTop_toTopOf="@id/container_components"
+            android:layout_marginTop="70dp"/>
+
+        <EditText
+            android:id="@+id/edit_password"
+            style="@style/edit_text"
+            android:drawableEnd="@drawable/ic_eye"
+            android:hint="@string/senha"
+            android:inputType="numberPassword"
+            app:layout_constraintEnd_toEndOf="@id/container_components"
+            app:layout_constraintStart_toStartOf="@id/container_components"
+            app:layout_constraintTop_toBottomOf="@id/edit_email"
+            android:layout_marginTop="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_login"
+            style="@style/button"
+            android:text="@string/entrar"
+            app:layout_constraintEnd_toEndOf="@id/container_components"
+            app:layout_constraintStart_toStartOf="@id/container_components"
+            app:layout_constraintTop_toBottomOf="@id/edit_password" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_create_account"
+            style="@style/button"
+            android:text="@string/criar_conta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/esqueceu_senha"
+            app:layout_constraintBottom_toBottomOf="@+id/container_components"
+            app:layout_constraintTop_toBottomOf="@id/button_create_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
